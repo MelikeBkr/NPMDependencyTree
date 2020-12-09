@@ -9,7 +9,7 @@ export function createApp() {
 
   app.use(express.json());
 
-  app.get('/package/:name/:version', getPackage);
+  app.get('/package/:packageName/:version', getPackage);
 
   return app;
 }
